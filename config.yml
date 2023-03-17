@@ -1,0 +1,227 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/images/uploads
+public_folder: /images/uploads
+
+site_url: https://sharegro.netlify.app
+#logo_url: https://sharegro/images/wordmark.png
+
+publish_mode: editorial_workflow
+
+collections:
+  - label: "Pages"
+    name: "pages"
+    format: frontmatter
+    editor:
+      preview: false
+    files:
+      - label: "Home"
+        name: "homepage"
+        file: "content/homepage.md"
+        preview_path: /
+        fields:
+          - {label: Hero Headline, name: heroHeadline, widget: string}
+          - {label: Hero Subtitle, name: heroSubtitle, widget: string}
+          - {label: Hero Copy, name: heroCopy, widget: string}
+          - {label: Hero Image, name: heroImage, widget: image}
+
+          - {label: Form Subtitle, name: formSubtitle, widget: string}
+          - {label: Form Button Text, name: formButtonText, widget: string}
+          - {label: Form Button Url, name: formButtonUrl, widget: string}
+
+          - {label: How Headline, name: howHeadline, widget: string}
+          - {label: How Subtitle, name: howSubtitle, widget: markdown}
+
+          - {label: Community Headline, name: communityHeadline, widget: string}
+          - {label: Community Video Link, name: communityVideoLink, widget: string}
+          - {label: Community Subtitle, name: communitySubtitle, widget: string}
+
+          - {label: Built Headline, name: builtHeadline, widget: string}
+          - {label: Built Copy, name: builtCopy, widget: string}
+          - {label: Built Button Text, name: builtButtonText, widget: string}
+          - {label: Built Button Url, name: builtButtonUrl, widget: string}
+          - {label: Built Image, name: builtImage, widget: image}
+
+          - {label: Blog Eyebrow, name: blogEyebrow, widget: string}
+          - {label: Blog Headline, name: blogHeadline, widget: string}
+
+      - label: "Our Investing Approach"
+        name: "our-investing-approach"
+        file: "content/our-investing-approach.md"
+        preview_path: /our-investing-approach
+        fields:
+          - {label: Hero Headline, name: heroHeadline, widget: string}
+          - {label: Hero Copy, name: heroCopy, widget: markdown}
+          - {label: Hero Button, name: heroButton, widget: string}
+          - {label: Hero Button Url, name: heroButtonUrl, widget: string}
+          - {label: Hero Image, name: heroImage, widget: image}
+
+          - {label: Build Headline, name: buildHeadline, widget: string}
+          - {label: Build Copy, name: buildCopy, widget: markdown}
+
+          - {label: Step 1 Text, name: step1Text, widget: string}
+          - {label: Step 1 Headline, name: step1Headline, widget: string}
+          - {label: Step 1 Sub Headline, name: step1SubHeadline, widget: markdown}
+          - {label: Step 1 Copy, name: step1Copy, widget: markdown}
+          - {label: Step 1 Image, name: step1Image, widget: image}
+
+          - {label: TLDR 1 Copy, name: tldr1Copy, widget: markdown}
+
+          - {label: Who Headline, name: whoHeadline, widget: string}
+          - label: Logos
+            name: logos
+            label_singular: logo
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+
+          - {label: Step 2 Text, name: step2Text, widget: string}
+          - {label: Step 2 Headline, name: step2Headline, widget: string}
+          - {label: Step 2 Sub Headline, name: step2SubHeadline, widget: markdown}
+          - {label: Step 2 Copy, name: step2Copy, widget: markdown}
+          - {label: Step 2 Image, name: step2Image, widget: image}
+
+          - {label: TLDR 2 Copy, name: tldr2Copy, widget: markdown}
+
+          - {label: Step 3 Text, name: step3Text, widget: string}
+          - {label: Step 3 Headline, name: step3Headline, widget: string}
+          - {label: Step 3 Sub Headline, name: step3SubHeadline, widget: markdown}
+          - {label: Step 3 Copy, name: step3Copy, widget: markdown}
+          - {label: Step 3 Image, name: step3Image, widget: image}
+
+          - {label: TLDR 3 Copy, name: tldr3Copy, widget: markdown}
+
+      - label: "Sharing Overview"
+        name: "sharing-overview"
+        file: "content/sharing-overview.md"
+        preview_path: /sharing-overview
+        fields:
+          - {label: Hero Headline, name: heroHeadline, widget: markdown}
+          - {label: Hero Copy, name: heroCopy, widget: markdown}
+          - {label: Hero Button Text, name: heroButtonText, widget: string}
+          - {label: Hero Button Url, name: heroButtonUrl, widget: string}
+          - {label: Hero Image, name: heroImage, widget: image}
+
+          - {label: How Headline, name: howHeadline, widget: string}
+          - {label: How Video Url, name: howVideoUrl, widget: string}
+          - label: Steps
+            name: steps
+            label_singular: step
+            widget: list
+            fields:
+              - {label: Number, name: number, widget: string}
+                {label: Headline, name: headline, widget: string}
+                {label: Copy, name: copy, widget: markdown}
+
+          - {label: How Eyebrow Text, name: howEyebrowText, widget: string}
+
+      - label: "Learn To Invest"
+        name: "learn-to-invest"
+        file: "content/learn-to-invest.md"
+        preview_path: /learn-to-invest
+        fields:
+          - {label: Hero Headline, name: heroHeadline, widget: string}
+          - {label: Hero Copy, name: heroCopy, widget: markdown}
+          - {label: Hero Button Text, name: heroButtonText, widget: string}
+          - {label: Hero Button Url, name: heroButtonUrl, widget: string}
+          - {label: Hero Image, name: heroImage, widget: image}
+
+          - {label: Video Headline, name: videoHeadline, widget: string}
+          - {label: Video Link, name: videoLink, widget: string}
+
+          - {label: Glossary Headline, name: glossaryHeadline, widget: string}
+          - {label: Glossary Copy, name: glossaryCopy, widget: markdown}
+
+          - {label: Education Eyebrow, name: educationEyebrow, widget: string}
+          - {label: Education Headline, name: educationHeadline, widget: string}
+
+          - {label: Experts Headline, name: expertsHeadline, widget: string}
+          - {label: Experts Subtitle, name: expertsSubtitle, widget: string}
+
+      - label: Why ShareGro
+        name: "why-sharegro"
+        file: "content/why-sharegro.md"
+        preview_path: /why-sharegro
+        fields:
+          - {label: Hero Headline, name: heroHeadline, widget: string}
+          - {label: Hero Copy, name: heroCopy, widget: markdown}
+          - {label: Hero Image, name: heroImage, widget: image}
+
+          - {label: Value Headline, name: valueHeadline, widget: string}
+          - label: Value Cards
+            name: valueCards
+            label_singular: value card
+            widget: list
+            fields:
+              - {label: Headline, name: headline, widget: string}
+              - {label: Copy, name: copy, widget: markdown}
+              - {label: Image, name: image, widget: image}
+
+          - label: Build Blocks
+            name: buildBlocks
+            label_singular: build block
+            widget: list
+            fields:
+              - {label: Headline, name: headline, widget: string}
+              - {label: Copy, name: copy, widget: markdown}
+              - {label: Image, name: image, widget: image}
+
+          - {label: Benefit Headline, name: benefitHeadline, widget: string}
+          - {label: Benefit Background Image, name: benefitBackgroundImage, widget: image}
+              
+
+      # - label: "Services"
+      #   name: "services"
+      #   file: "content/services.md"
+      #   preview_path: /services
+      #   fields:
+      #     - {label: Hero Headline, name: heroHeadline, widget: string}
+      #     - {label: Hero Copy, name: heroCopy, widget: string}
+      #     - {label: Hero Image, name: heroImage, widget: image}
+
+      #     - label: Services
+      #       name: services
+      #       label_singular: service
+      #       widget: list
+      #       fields:
+      #         - {label: Title, name: title, widget: string}
+      #         - {label: Copy, name: copy, widget: markdown}
+      #         - label: Examples
+      #           name: examples
+      #           label_singular: example
+      #           widget: list
+      #           field: {label: Title, name: title, widget: string}
+      #         - {label: Callout, name: callout, widget: string, required: false}
+      #         - {label: Price, name: price, widget: number}
+      #         - {label: Booker URL, name: bookerUrl, widget: string}
+
+      #     - label: Add-Ons
+      #       name: addons
+      #       label_singular: addon
+      #       widget: list
+      #       field: {label: Title, name: title, widget: string}
+
+      #     - label: Images
+      #       name: images
+      #       label_singular: image
+      #       widget: list
+      #       field: {label: Image, name: imageUrl, widget: image}
+
+  - label: 'Blog Posts'
+    name: 'blog-posts'
+    editor:
+      preview: false
+    label_singular: Post
+    format: frontmatter
+    folder: 'content/blog-posts'
+    preview_path: /blog/{{slug}}
+    create: true
+    fields:
+      - { label: Eyebrow, name: eyebrow, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: Author, name: author, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Featured Image, name: image, widget: image }
+      - { label: Body, name: body, widget: markdown }

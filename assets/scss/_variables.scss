@@ -1,0 +1,64 @@
+$font-family-base: 'Outfit', sans-serif;
+$primaryDark: #115740;
+$primaryLight: #42966A;
+$secondaryLight: #b2dbed;
+$secondaryDark: #3C90BE;
+$accent: #84265e;
+$gray: #A1AEB7;
+$tan: #FFFAF3;
+$darkTan: #F4E8D4;
+
+$theme-colors: (
+  primaryDark: $primaryDark,
+  primaryLight: $primaryLight,
+  secondaryLight: $secondaryLight,
+  secondaryDark: $secondaryDark,
+  accent: $accent,
+  gray: $gray,
+  tan: $tan,
+  darkTan: $darkTan,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 640px,
+  lg: 992px,
+  xl: 1440px,
+  xxl: 1920px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1650px
+);
+
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$line-height-base: 1.75;
+$link-decoration: underline;
+
+$body-color:#424B5A;
+$link-color: $secondary;
+
+// $headings-color: $primary;
+$headings-font-weight: 400;
+
+$btn-font-weight: 700;
+
+$input-btn-font-size: 14px;
+$input-btn-padding-y: 4px;
+$input-btn-padding-x: 26px;
+
+
+$input-bg: $white;
+$input-border-color: $secondaryDark;
+$input-padding-x: 15px;
+$input-padding-y: 29px;
+
+$btn-font-size: $input-btn-font-size;
+$btn-padding-y: 16px;
+$btn-padding-x: 36px;

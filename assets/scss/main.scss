@@ -1,0 +1,96 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+.fill-height {
+  height: 100%;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+p a {
+  text-transform: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 1.05px;
+  min-width: 165px;
+
+  &.btn-secondary,
+  &.btn-tertiary {
+    color: white;
+  }
+}
+
+p.larger {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+.font-weight-regular {
+  font-weight: 400 !important;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 21px;
+}
+
+h1, .h1 {
+  font-size: 66px;
+  font-weight: 500;
+}
+
+h2, .h2 {
+  font-size: 46px;
+  font-weight: 600;
+}
+
+h3, .h3 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+h4, .h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h5, .h5 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h6, .h6 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.link-reset {
+  color: unset;
+}
+
+.headings-font-family {
+  font-family: $headings-font-family;
+}
+.body-font-family {
+  font-family: $font-family-base;
+}
+
+.mb-45 {
+  margin-bottom: 2.25rem;
+}
+
+.ml-45 {
+  margin-left: 2.25rem;
+}
+
+.mr-45 {
+  margin-right: 2.25rem;
+}
