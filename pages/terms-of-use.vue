@@ -7,12 +7,12 @@
         )
           b-col(
             cols="12"
-            md="8"
+            md="12"
           )
             h1.text-primaryDark Terms of Use
             iframe(
               class="terms-iframe"
-              src="https://sharegro.zendesk.com/hc/en-us/articles/16561299202715-Member-Agreement-Terms"
+              src="https://sharegro.com"
             )
 
 </template>
@@ -26,7 +26,7 @@ export default {
 <style lang="scss" scoped>
 
 .terms-iframe {
-  width: calc(100vw - 120px);
+  width: 100%;
   border: 0;
   height: calc(100vh - 380px);
 }
