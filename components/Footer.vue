@@ -87,7 +87,7 @@
           md="auto"
         )
           nuxt-link(
-            to="/terms-and-conditions"
+            to="/terms-of-use"
           ) Terms &amp; Conditions
         b-col(
           cols="12"
