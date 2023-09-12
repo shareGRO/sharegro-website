@@ -12,7 +12,7 @@
             h1.text-primaryDark Terms of Use
             iframe(
               class="terms-iframe"
-              src="https://sharegro.com"
+              src="https://sharegro.zendesk.com/hc/en-us/articles/16561299202715-Member-Agreement-Terms"
             )
 
 </template>
