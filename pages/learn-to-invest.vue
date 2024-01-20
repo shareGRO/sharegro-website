@@ -157,7 +157,7 @@ export default {
   components: {
   },
   async asyncData ({ $content }) {
-    const posts = await $content('blog-post')
+    const posts = await $content('blog-posts')
       .sortBy('date', 'asc')
       .fetch()
 

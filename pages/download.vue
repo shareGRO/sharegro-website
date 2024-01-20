@@ -14,9 +14,9 @@
 
 <script>
 export default {
-  name: 'TermsOfUse',
+  name: 'Download',
   beforeMount () {
-    document.location.replace('https://sharegro.zendesk.com/hc/en-us/articles/16561299202715-Member-Agreement-Terms-of-Service')
+    document.location.replace('/')
   }
 }
 </script>
