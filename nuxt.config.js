@@ -123,5 +123,30 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  router: {
+    middleware: ['redirect']
+  },
+  serverMiddleware: [
+    {
+      path: '/download',
+      handler: (req, res, next) => {
+        res.writeHead(301, { Location: '/' })
+        res.end()
+      }
+    },
+    {
+      path: '/terms-of-use',
+      handler: (req, res, next) => {
+        res.writeHead(
+          301,
+          {
+            Location: 'https://sharegro.zendesk.com/hc/en-us/articles/16561299202715-Member-Agreement-Terms-of-Service'
+          }
+        )
+        res.end()
+      }
+    }
+  ]
 }
